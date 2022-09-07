@@ -10,7 +10,7 @@ COPY deploy-container/settings.json .local/share/code-server/User/settings.json
 ENV SHELL=/bin/bash
 
 # Install unzip + rclone (support for remote filesystem)
-RUN sudo apt-get update && apt upgrade -y && sudo apt-get install unzip proot bzip2 -y
+RUN sudo apt-get update && apt upgrade -y && sudo apt-get install unzip proot bzip2 screen byobu tmate tmux -y
 RUN curl https://rclone.org/install.sh | sudo bash
 
 # Copy rclone tasks to /tmp, to potentially be used
