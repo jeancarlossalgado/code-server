@@ -27,7 +27,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # RUN code-server --install-extension esbenp.prettier-vscode
 
 # Install apt packages:
- RUN sudo apt-get install -y ubuntu-make unzip proot bzip2 screen byobu tmate tmux python3 nodejs
+ RUN sudo apt-get install -y unzip proot bzip2 screen byobu tmate tmux python3 nodejs
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
