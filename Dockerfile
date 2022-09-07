@@ -27,7 +27,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
  RUN code-server --install-extension esbenp.prettier-vscode
 
 # Install apt packages:
- RUN sudo apt-get install -y unzip proot bzip2 screen byobu tmate tmux python3 nodejs sudo wget ffmpeg gnupg2 ssh docker.io firefox busybox
+ RUN sudo apt-get install -y unzip proot bzip2 screen byobu tmate tmux python3 nodejs sudo wget ffmpeg gnupg2 ssh docker.io busybox
  
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
